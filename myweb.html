@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1 id="JS">Nakli Arsty</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <h1 class="text">Looking Far away in the raining sky I saw my enemy who overshadowed my Master. So I went and faced him up and said to my Master! <br> "It will only take a Moment"</h1>
+        
+        <button id="to-about">
+            <b>Journey Begins!</b>
+        </button>
+        </div>
+    </section>
+
+    <div class="main">
+        <section id="main">
+            <h1>Welcome to Artsy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eos quidem asperiores doloremque. Obcaecati, asperiores incidunt! Alias nisi perferendis illo iusto doloremque, ullam qui neque doloribus repellendus laborum cum delectus.
+            </p>
+        </section>
+
+        <aside id="sidebar">
+            <ul>
+                <li>Games</li>
+                <li>Movies</li>
+                <li>Art</li>
+                <li>Anime</li>
+            </ul>
+        </aside>
+
+        <section id="main">
+            <h1>Welcome to Artsy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eos quidem asperiores doloremque. Obcaecati, asperiores incidunt! Alias nisi perferendis illo iusto doloremque, ullam qui neque doloribus repellendus laborum cum delectus.
+            </p>
+        </section>
+
+        <section id="main">
+            <h1>Welcome to Artsy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur eos quidem asperiores doloremque. Obcaecati, asperiores incidunt! Alias nisi perferendis illo iusto doloremque, ullam qui neque doloribus repellendus laborum cum delectus.
+            </p>
+        </section>
+
+        
+    </div>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2019, Artsy</p>
+    </footer>
+</body>
+
+<script>
+const Gamer = document.getElementById("JS");
+Gamer.textContent="Artsy";
+
+</script>
+
+<script>
+    document.getElementById("to-about").addEventListener("click", function(){
+
+        var sidey=document.getElementById("sidebar");
+
+        if(sidey.style.display == "none" || !sidey.style.display) {
+            sidey.style.display = "block";
+        }
+        else{
+            sidey.style.display = "none";
+        }
+        
+    });
+</script>
+
+</html>
